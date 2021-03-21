@@ -1,25 +1,18 @@
 package com.padeoe.njunet.connect;
 
-import android.Manifest;
-import android.app.FragmentManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
 import android.graphics.Typeface;
-import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.RelativeSizeSpan;
@@ -29,11 +22,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.padeoe.nicservice.njuwlan.object.portal.ReturnData;
 import com.padeoe.nicservice.njuwlan.object.portal.UserInfo;
 import com.padeoe.njunet.App;
 
@@ -42,12 +33,10 @@ import com.padeoe.njunet.connect.controller.ConnectManager;
 import com.padeoe.njunet.connect.controller.ConnectService;
 import com.padeoe.njunet.connect.controller.UpdateInfo;
 import com.padeoe.njunet.connect.uihandler.ConnectResultHandle;
-import com.padeoe.njunet.deploy.FirstSettingActivity;
 import com.padeoe.njunet.settings.MySettingsActivity;
 import com.padeoe.njunet.util.MyAnimation;
 import com.padeoe.njunet.util.MyObservable;
 import com.padeoe.njunet.util.MyObserver;
-import com.padeoe.njunet.util.PrefFileManager;
 
 public class MainActivity extends AppCompatActivity implements MyObserver<ConnectResultHandle> {
     public ConnectManager.Status status = ConnectManager.Status.ONLINE;

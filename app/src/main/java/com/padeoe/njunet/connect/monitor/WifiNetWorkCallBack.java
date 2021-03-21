@@ -4,13 +4,10 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.LinkProperties;
 import android.net.Network;
-import android.net.NetworkCapabilities;
 import android.net.wifi.WifiManager;
 import android.os.Build;
-import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.padeoe.njunet.App;
 import com.padeoe.njunet.R;

@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:ignore="RtlHardcoded">
 
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
@@ -21,9 +21,9 @@
             android:layout_height="@dimen/first_setting_bg_image_height"
             android:fitsSystemWindows="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/firstsetting" />
+            app:srcCompat="@drawable/firstsetting" />
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <RelativeLayout
         android:id="@+id/first_setting_title_layout_third"

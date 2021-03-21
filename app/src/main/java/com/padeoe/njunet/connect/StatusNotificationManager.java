@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.preference.PreferenceManager;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 
 import com.padeoe.njunet.App;
 import com.padeoe.njunet.R;
@@ -49,7 +49,7 @@ public class StatusNotificationManager {
             Intent loginIntent = new Intent(App.getAppContext(), ConnectService.class);
             loginIntent.setAction(ConnectService.SCAN_AND_CONNECT_ACTION);
             PendingIntent piDismiss = PendingIntent.getService(App.getAppContext(), 0, loginIntent, 0);
-            android.support.v4.app.NotificationCompat.Builder builder =
+            androidx.core.app.NotificationCompat.Builder builder =
                     new NotificationCompat.Builder(App.getAppContext());
             builder
                     .setContentText(App.getAppContext().getResources().getString(R.string.pull_down_notification))

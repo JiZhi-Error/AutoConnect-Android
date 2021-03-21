@@ -1,4 +1,5 @@
-<RelativeLayout android:layout_width="wrap_content"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
     android:layout_height="@dimen/height_detail_layout"
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -10,7 +11,7 @@
             android:id="@+id/status_iamge"
             android:layout_width="@dimen/status_image_width"
             android:layout_height="@dimen/status_image_width"
-            android:src="@drawable/remote"
+            app:srcCompat="@drawable/remote"
             android:layout_marginTop="@dimen/detail_margin_top"
             android:layout_marginLeft="@dimen/status_image_margin_left_tablet"
             />
@@ -18,7 +19,7 @@
             android:id="@+id/status_image_noconnection"
             android:layout_width="@dimen/status_image_width"
             android:layout_height="@dimen/status_image_width"
-            android:src="@drawable/noconnect"
+            app:srcCompat="@drawable/noconnect"
             android:layout_marginTop="@dimen/detail_margin_top"
             android:layout_marginLeft="@dimen/status_image_margin_left_tablet"
             android:visibility="gone"
@@ -29,7 +30,7 @@
             android:layout_height="@dimen/status_image_width"
             android:layout_marginLeft="@dimen/status_image_margin_left_tablet"
             android:layout_marginTop="@dimen/detail_margin_top"
-            android:src="@drawable/pc"
+            app:srcCompat="@drawable/pc"
             android:visibility="gone" />
     </LinearLayout>
 
@@ -65,7 +66,7 @@
             android:id="@+id/amount_icon"
             android:layout_width="18dp"
             android:layout_height="18dp"
-            android:src="@drawable/amount_icon"
+            app:srcCompat="@drawable/amount_icon"
             android:layout_marginTop="@dimen/detail_icon_margin_top_gap"
             android:layout_marginLeft="@dimen/status_text_margin_left_tablet"/>
         <TextView
@@ -82,7 +83,7 @@
             android:id="@+id/time_icon"
             android:layout_width="18dp"
             android:layout_height="18dp"
-            android:src="@drawable/clock"
+            app:srcCompat="@drawable/clock"
             android:layout_below="@+id/amount"
             android:layout_marginTop="@dimen/detail_icon_margin_top"
             android:layout_marginLeft="@dimen/status_text_margin_left_tablet"/>
@@ -104,7 +105,7 @@
             android:id="@+id/location_icon"
             android:layout_width="18dp"
             android:layout_height="18dp"
-            android:src="@drawable/location"
+            app:srcCompat="@drawable/location"
             android:layout_toRightOf="@id/amount"
             android:layout_marginTop="@dimen/detail_icon_margin_top_gap"
             android:layout_marginLeft="50dp"/>
@@ -124,7 +125,7 @@
             android:id="@+id/ip_icon"
             android:layout_width="18dp"
             android:layout_height="18dp"
-            android:src="@drawable/ip"
+            app:srcCompat="@drawable/ip"
             android:layout_below="@+id/location"
             android:layout_toRightOf="@id/time"
             android:layout_marginTop="@dimen/detail_icon_margin_top"

@@ -2,10 +2,7 @@ package com.padeoe.njunet.settings;
 
 import android.Manifest;
 import android.app.FragmentManager;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,12 +10,10 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.ActionBar;
-import android.util.Log;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.ActionBar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -29,7 +24,6 @@ import com.padeoe.njunet.App;
 import com.padeoe.njunet.R;
 import com.padeoe.njunet.connect.PermissionExplainFragment;
 import com.padeoe.njunet.connect.StatusNotificationManager;
-import com.padeoe.njunet.connect.controller.ConnectManager;
 import com.padeoe.njunet.connect.controller.ConnectService;
 import com.padeoe.njunet.util.PrefFileManager;
 
@@ -157,7 +151,7 @@ public class MySettingsActivity extends AppCompatPreferenceActivity implements P
     }
 
     /**
-     * Set up the {@link android.app.ActionBar}, if the API is available.
+     * Set up the {@link ActionBar}, if the API is available.
      */
     private void setupActionBar() {
         ActionBar actionBar = getSupportActionBar();
